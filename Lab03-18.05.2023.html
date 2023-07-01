@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+<h1>Registration Form</h1>
+<form action="submit.php" method="post">
+<table>
+<tr>
+ <td><label for="Firstnameame: </label></td>
+  <td><input type="text" id="firstName" name="firstName" required></td>
+</tr>
+<tr>
+  <td><label for="lastName">Last Name: </label></td>
+  <td><input type="text" id="lastName" name="lastName" required></td>
+</tr>
+<tr>
+  <td><label for="mobileNumber">Mobile Number:</label></td>
+  <td><input type="text" id="mobileNumber" name="mobileNumber" required></td>
+</tr>
+<tr>
+  <td><label for="gender">Gender:</label></td>
+<td>
+    <input type="radio" id="male" name="gender" value="male"> 
+      <label for="male">Male</label>
+    <input type="radio" id="Female" name="gender" value="Fmale"> 
+      <label for="Female">Female</label>
+    </td>
+<tr>
+    <td><label for="Email">Email:</label></td>
+  <td><input type="text" id="Email" name="Email" required></td>
+</tr>
+<td>
+    <label for="Favourite Music">Favourite Music:</label></td>
+
+  <td> 
+    <input type="checkbox"id="pop" name="favoriteMusic" value="pop">
+    <label for="pop">Pop</label>
+    <input type="checkbox" id="rock" name="favoriteMusic" value="rock">
+    <label for="rock">Rock</label>
+    <input type="checkbox" id="pop" name="favoriteMusic" value="pop"> 
+    <label for="other">Other</label>
+    <input type="checkbox" id="other" name="favoriteMusic" value="other">
+</td>
+</tr>
+<tr>
+<td><label for="additionalDetails">Additional Details:</label></td>
+<td><textarea id="additionalDetails" name="additionalDetails" rows="4" cols="50"></textarea></td>
+</tr>
+<tr>
+<td></td>
+<td>
+<input type="checkbox" id="termsAndConditions" name="termsAndConditions" required>
+<label for="termsAndConditions">I agree to the terms and conditions</label>
+</td>
+</tr>
+</table>
+<br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form>
+</body>
+</html>
