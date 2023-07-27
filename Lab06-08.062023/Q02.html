@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enable/Disable Embedded Video</title>
+</head>
+<body>
+    <h1>Video Control</h1>
+    <video id="myVideo" width="320" height="240" controls>
+        <source src="path/to/your/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        const videoElement = document.getElementById('myVideo');
+
+        // Function to play the video when mouse is over the video
+        function playVideo() {
+            videoElement.play();
+        }
+
+        // Function to pause the video when mouse leaves the video
+        function pauseVideo() {
+            videoElement.pause();
+        }
+
+        // Add event listeners to the video element
+        videoElement.addEventListener('mouseover', playVideo);
+        videoElement.addEventListener('mouseout', pauseVideo);
+    </script>
+</body>
+</html>
+
+
+
+
+
